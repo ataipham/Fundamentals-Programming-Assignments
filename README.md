@@ -5,4 +5,4 @@ BTL KTLT HCMUT
 -BTL1: 9.62/10
 -BLT2: 8.78/10
 
-                                                            -Lưu giữ làm kỷ niệm 01/08/2024-
+                                                            -01/08/2024-
