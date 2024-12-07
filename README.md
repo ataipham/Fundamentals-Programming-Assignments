@@ -1,8 +1,7 @@
 # Fundamentals-Programming-Assignments
-BTL KTLT HCMUT
-Đây source code file .cpp của 2 bài tập lớn môn Kỹ thuật Lập trình CO1027 của sinh viên năm nhất CSE của Trường Đại học Bách Khoa TPHCM.
+-BTL môn Kỹ thuật Lập trình (CO1027) của sinh viên năm nhất CSE Trường Đại học Bách Khoa TPHCM.
 
--BTL1: 9.62/10
--BLT2: 8.78/10
+-BTL1: 9.62
+-BLT2: 8.78
 
                                                             -01/08/2024-
