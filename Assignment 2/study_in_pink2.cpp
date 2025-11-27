@@ -1,4 +1,3 @@
-
 #include "study_in_pink2.h"
 int FakeWall::getReqExp() const
 {
@@ -90,11 +89,6 @@ Position Sherlock::getNextPosition()
         return Position::npos;
 }
 
-Position Sherlock::getCurrentPosition()
-{
-    return pos;
-}
-
 void Sherlock::move()
 {
     if (hp <= 0 || exp <= 0)
@@ -154,11 +148,6 @@ int c = pos.getCol();
     return Position::npos;
 }
 
-Position Watson::getCurrentPosition()
-{
-    return pos;
-}
-
 void Watson::move()
 {
     if (this->hp <= 0 || this->exp <= 0)
@@ -216,10 +205,6 @@ long long Criminal::ManhattanDistance(Position current)
     return distance_to_sher(current.getRow(), current.getCol()) + distance_to_wats(current.getRow(), current.getCol());
 }
 
-Position Criminal::getCurrentPosition()
-{
-    return pos;
-}
 const Position Position::npos(-1, -1);
 
 Position Criminal::getPreviousPosition()
@@ -335,12 +320,11 @@ string ArrayMovingObject::str() const
     result += "]";
     return result;
 }
-int ArrayMovingObject::getCount() const{
-    return this->count;
-}
-int ArrayMovingObject::getCapacity() const{
+
+int ArrayMovingObject::getCapacity() const {
     return this->capacity;
 }
+
 int ArrayMovingObject::size() const{
     return this->count;
 }
@@ -812,16 +796,6 @@ long long RobotC::distancetoWats(Watson *wats) const
     return abs(this->pos.getRow() - wats->getCurrentPosition().getRow()) + abs(this->pos.getCol() - wats->getCurrentPosition().getCol());
 }
 
-long long RobotC::getDistance(Sherlock *sherlock) const
-{
-    return distancetoSher(sherlock);
-}
-
-long long RobotC::getDistance(Watson *wats) const
-{
-    return distancetoWats(wats);
-}
-
 Position RobotC::getNextPosition()
 {
     if (criminal->moved)
@@ -852,11 +826,6 @@ long long RobotS::distancetoSherlock(int Robotrow, int Robotcol)
     int RobotS_row = Robotrow;
     int RobotS_col = Robotcol;
     return abs(RobotS_row - sherlock->getRow()) + abs(RobotS_col - sherlock->getCol());
-}
-
-Position RobotS::getCurrentPosition()
-{
-    return pos;
 }
 
 Position RobotS::getNextPosition() {;
